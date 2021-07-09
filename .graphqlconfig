@@ -1,0 +1,30 @@
+{
+  "projects": {
+    "travelhome": {
+      "name": "Travelhome API",
+      "includes": ["*.travelhome.graphql"],
+      "schemaPath": "src/api/travelhome.schema.json",
+      "extensions": {
+        "endpoints": {
+          "Development": {
+            "url": "https://localhost:32768/graphql",
+            "headers": {
+              "user-agent": "JS GraphQL",
+              "accept-language": "nl-NL"
+            },
+            "introspect": true
+          },
+
+          "Production": {
+            "url": "https://api.travelhome.nl/graphql",
+            "headers": {
+              "user-agent": "JS GraphQL",
+              "accept-language": "nl-NL"
+            },
+            "introspect": true
+          }
+        }
+      }
+    }
+  }
+}

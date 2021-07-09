@@ -1,0 +1,57 @@
+{
+  "name": "fastifybug",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rimraf dist && webpack",
+    "build-prod": "rimraf dist && cross-env NODE_ENV=production webpack"
+  },
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "fastify": "^3.18.1",
+    "fastify-static": "^4.2.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.6",
+    "eslint": "^7.30.0",
+    "eslint-config-preact": "^1.1.4",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "html-webpack-plugin": "^5.3.2",
+    "mini-css-extract-plugin": "^2.1.0",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.2",
+    "sass": "^1.35.2",
+    "sass-loader": "^12.1.0",
+    "typescript": "^4.3.5",
+    "webpack": "^5.43.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-graphql-loader": "^1.0.2",
+    "webpack-manifest-plugin": "^3.1.1"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 120,
+    "endOfLine": "auto",
+    "arrowParens": "avoid"
+  },
+  "browserslist": [
+    "> 1% in NL",
+    "ie 11",
+    "ios_saf >= 9"
+  ]
+}
